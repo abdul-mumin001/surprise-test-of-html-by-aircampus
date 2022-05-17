@@ -138,41 +138,49 @@
 
     </table>
     <p>This table has been taken from from cricket website: <a href="">click here</a> to visit</p>
-    <form style="border:2px solid black; padding:20px; margin-right:60px;" action="">
-        <h2>Contact Form</h2>
+    <form action="">
+        <fieldset>
+            <legend><b> Contact Form </b></legend>
 
-        <label for="nameid">Full Name</label>
-        <input type="text" placeholder="" id="nameid"></input><br><br>
-        <label for="emailid">Email</label>
-        <input type="text" placeholder="" id="emailid"></input><br><br>
+            <label for="nameid"><b>Full Name</b></label><br>
+            <input type="text" placeholder="" id="nameid"></input><br><br>
+            <label for="emailid"><b>Email</b></label><br>
+            <input type="text" placeholder="" id="emailid"></input><br><br>
 
-        <label for="phid">Phone Number</label>
-        <input type="text" placeholder="" id="phid"></input><br><br>
-        <label for="passid">Password</label>
-        <input type="text" placeholder="" id="passid"><br><br>
-        <label for="conid">Confirm Password</label>
-        <input type="text" placeholder="" id="conid"></input><br><br>
-        <label for="gender"><b>Gender</b></label><br>
-        <input type="radio" value="male" name="gender" id="id1">Male</input><br><br>
+            <label for="phid"><b>Phone Number</b></label><br>
+            <input type="text" placeholder="" id="phid"></input><br><br>
+            <label for="passid"><b></b>Password</b></label><br>
+            <input type="text" placeholder="" id="passid"><br><br>
+            <label for="conid"><b> Confirm Password</b></label><br>
+            <input type="text" placeholder="" id="conid"></input><br><br>
+            <label for="gender"><b> Gender</b></label><br>
+            <input type="radio" value="male" name="gender" id="id1">Male</input><br><br>
 
-        <input type="radio" value="Female" name="gender" id="id2">Female</input><br><br>
+            <input type="radio" value="Female" name="gender" id="id2">Female</input><br><br>
 
-        <input type="radio" value="Other" name="gender" id="id3">Other</input><br><br>
+            <input type="radio" value="Other" name="gender" id="id3">Other</input><br><br>
 
-        <label for="Select your favourite player">Select your favourite player:</label><br><br>
-        <select name="Select your favourite player">
-            <option value="Virender shewag">Virender shewag</option>
-            <option value="Rahul Dravid">Rahul Dravid</option>
-            <option value="Virat Kholi">Virat Kholi</option>
-        </select><br><br>
+            <label for="Select your favourite player"><b> Select your favourite player:</b></label><br>
+            <input list="players" name="Favourite player">
+            <datalist id="players">
+                <option value="Virender shewag"></option>
+                <option value="Rahul Dravid"></option>
+                <option value="Virat Kholi"></option>
+                <option value="Rohit sharma"></option>
+                <option value="Ravindra Jadeja"></option>
+                <option value="Rishabh Pant"></option>
+                <option value="KL Rahul"></option>
+                <option value="Jasprit Bumbrah"></option>
+            </datalist><br><br>
 
-        <label for="textareaid">Address</label><br>
-        <textarea name="address" id="textareaid" cols="30" rows="10"></textarea><br><br>
-        <input type="register" value="Register" />
-        </legend>
+            <label for="textareaid"><b> Address</b></label><br>
+            <textarea name="address" id="textareaid" cols="30" rows="10"></textarea><br><br>
 
+
+            <button>Register</button>
+
+        </fieldset>
     </form>
-
     <p>with everything we also came to end so a departing gift from our side:</p>
 
     <iframe width=" 820" height="580" style="border: 2px solid black;" src="https://www.youtube.com/embed/1QQrcTik1qo"
